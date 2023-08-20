@@ -43,7 +43,7 @@ st.markdown('###')
 
 with st.container():
     st.write(""" Tabel Produksi Penangkapan Ikan Berdasarkan Kecamatan  """)
-    df1 = file[new_ct].groupby(['Kecamatan','Jenis','Tahun'])['RTP', 'Produksi (Ton)'].sum()
+    df1 = file[new_ct].groupby(['Kecamatan','Jenis','Tahun'])[['RTP', 'Produksi (Ton)']].sum()
     df1 = df1.reset_index()
     st.dataframe(df1, width=1000)
 
