@@ -15,7 +15,7 @@ def local_css(file_name):
 
 local_css("styles/main.css")
 
-st.markdown("## STATISTIK PERIKANAN BUDIDAYA _KABUPATEN ACEH BARAT 2015-2022_")
+st.markdown("## JUMLAH RTP DAN PRODUKSI PERIKANAN TANGKAP _KABUPATEN ACEH BARAT 2015-2022_")
 st.write("---")
 
 file = pd.read_csv("data/df-t1.csv")
